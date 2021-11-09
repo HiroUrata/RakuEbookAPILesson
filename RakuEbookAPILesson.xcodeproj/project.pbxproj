@@ -13,9 +13,13 @@
 		54E11007273AABDC00A2019E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E11005273AABDC00A2019E /* Main.storyboard */; };
 		54E11009273AABDF00A2019E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E11008273AABDF00A2019E /* Assets.xcassets */; };
 		54E1100C273AABDF00A2019E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E1100A273AABDF00A2019E /* LaunchScreen.storyboard */; };
+		54E11018273AACB500A2019E /* TableViewCutomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E11016273AACB500A2019E /* TableViewCutomCell.swift */; };
+		54E11019273AACB500A2019E /* TableViewCutomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E11017273AACB500A2019E /* TableViewCutomCell.xib */; };
+		85E1AEC3CAB2802E07D6C71B /* Pods_RakuEbookAPILesson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AEA44C8FB88068E908F76E /* Pods_RakuEbookAPILesson.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05AEA44C8FB88068E908F76E /* Pods_RakuEbookAPILesson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RakuEbookAPILesson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E10FFC273AABDC00A2019E /* RakuEbookAPILesson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RakuEbookAPILesson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E10FFF273AABDC00A2019E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54E11001273AABDC00A2019E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		54E11008273AABDF00A2019E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54E1100B273AABDF00A2019E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54E1100D273AABDF00A2019E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E11016273AACB500A2019E /* TableViewCutomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCutomCell.swift; sourceTree = "<group>"; };
+		54E11017273AACB500A2019E /* TableViewCutomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCutomCell.xib; sourceTree = "<group>"; };
+		8897A89D9462C514FD6C0BF7 /* Pods-RakuEbookAPILesson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuEbookAPILesson.release.xcconfig"; path = "Target Support Files/Pods-RakuEbookAPILesson/Pods-RakuEbookAPILesson.release.xcconfig"; sourceTree = "<group>"; };
+		C0422A115F8B5C2C604C43E9 /* Pods-RakuEbookAPILesson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuEbookAPILesson.debug.xcconfig"; path = "Target Support Files/Pods-RakuEbookAPILesson/Pods-RakuEbookAPILesson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E1AEC3CAB2802E07D6C71B /* Pods_RakuEbookAPILesson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				54E10FFE273AABDC00A2019E /* RakuEbookAPILesson */,
 				54E10FFD273AABDC00A2019E /* Products */,
+				D3B26E68B28C60F85A729904 /* Pods */,
+				85561763D712ADF2FD72136F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +69,64 @@
 			children = (
 				54E10FFF273AABDC00A2019E /* AppDelegate.swift */,
 				54E11001273AABDC00A2019E /* SceneDelegate.swift */,
-				54E11003273AABDC00A2019E /* ViewController.swift */,
-				54E11005273AABDC00A2019E /* Main.storyboard */,
-				54E11008273AABDF00A2019E /* Assets.xcassets */,
+				54E11015273AAC4200A2019E /* Model */,
+				54E11014273AAC3C00A2019E /* View */,
+				54E11013273AAC3400A2019E /* Controller */,
 				54E1100A273AABDF00A2019E /* LaunchScreen.storyboard */,
 				54E1100D273AABDF00A2019E /* Info.plist */,
 			);
 			path = RakuEbookAPILesson;
+			sourceTree = "<group>";
+		};
+		54E11013273AAC3400A2019E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54E11003273AABDC00A2019E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E11014273AAC3C00A2019E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E11005273AABDC00A2019E /* Main.storyboard */,
+				54E11008273AABDF00A2019E /* Assets.xcassets */,
+				54E1101A273AACBA00A2019E /* TableViewCellFile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54E11015273AAC4200A2019E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E1101A273AACBA00A2019E /* TableViewCellFile */ = {
+			isa = PBXGroup;
+			children = (
+				54E11016273AACB500A2019E /* TableViewCutomCell.swift */,
+				54E11017273AACB500A2019E /* TableViewCutomCell.xib */,
+			);
+			path = TableViewCellFile;
+			sourceTree = "<group>";
+		};
+		85561763D712ADF2FD72136F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05AEA44C8FB88068E908F76E /* Pods_RakuEbookAPILesson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3B26E68B28C60F85A729904 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0422A115F8B5C2C604C43E9 /* Pods-RakuEbookAPILesson.debug.xcconfig */,
+				8897A89D9462C514FD6C0BF7 /* Pods-RakuEbookAPILesson.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54E11010273AABDF00A2019E /* Build configuration list for PBXNativeTarget "RakuEbookAPILesson" */;
 			buildPhases = (
+				5E0AA047896DA9162BB02BC1 /* [CP] Check Pods Manifest.lock */,
 				54E10FF8273AABDC00A2019E /* Sources */,
 				54E10FF9273AABDC00A2019E /* Frameworks */,
 				54E10FFA273AABDC00A2019E /* Resources */,
+				DE48063F88042254D5A0AC11 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +191,54 @@
 			files = (
 				54E1100C273AABDF00A2019E /* LaunchScreen.storyboard in Resources */,
 				54E11009273AABDF00A2019E /* Assets.xcassets in Resources */,
+				54E11019273AACB500A2019E /* TableViewCutomCell.xib in Resources */,
 				54E11007273AABDC00A2019E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E0AA047896DA9162BB02BC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RakuEbookAPILesson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE48063F88042254D5A0AC11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RakuEbookAPILesson/Pods-RakuEbookAPILesson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RakuEbookAPILesson/Pods-RakuEbookAPILesson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RakuEbookAPILesson/Pods-RakuEbookAPILesson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54E10FF8273AABDC00A2019E /* Sources */ = {
@@ -140,6 +247,7 @@
 			files = (
 				54E11004273AABDC00A2019E /* ViewController.swift in Sources */,
 				54E11000273AABDC00A2019E /* AppDelegate.swift in Sources */,
+				54E11018273AACB500A2019E /* TableViewCutomCell.swift in Sources */,
 				54E11002273AABDC00A2019E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +392,7 @@
 		};
 		54E11011273AABDF00A2019E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0422A115F8B5C2C604C43E9 /* Pods-RakuEbookAPILesson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +403,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,12 +415,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		54E11012273AABDF00A2019E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8897A89D9462C514FD6C0BF7 /* Pods-RakuEbookAPILesson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +432,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +444,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
