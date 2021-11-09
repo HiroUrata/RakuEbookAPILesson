@@ -35,19 +35,23 @@ extension AlamofireProcess{
                 
                 let detailData = JSON(response.data as Any)
                 
-                for dataCount in 0..<detailData["items"].count{
+                print(detailData)
+                
+                for dataCount in 0..<30{
                     
-                    getDataNilCheck(mediumImageUrlCheck: detailData["items"][dataCount]["item"]["mediumImageUrl"].string,
-                                    titleCheck: detailData["items"][dataCount]["item"]["title"].string,
-                                    authorCheck: detailData["items"][dataCount]["item"]["author"].string,
-                                    itemCaptionCheck: detailData["items"][dataCount]["item"]["itemCaption"].string)
+                    getDataNilCheck(mediumImageUrlCheck: detailData["Items"][dataCount]["Item"]["mediumImageUrl"].string,
+                                    titleCheck: detailData["Items"][dataCount]["Item"]["title"].string,
+                                    authorCheck: detailData["Items"][dataCount]["Item"]["author"].string,
+                                    itemCaptionCheck: detailData["Items"][dataCount]["Item"]["itemCaption"].string)
                     
                     resultEbookDetailArray.append(EbookDetailDatas(mediumImageUrl: privateMediumImageUrl,
                                                                    title: privateTitle,
                                                                    author: privateAuthor,
                                                                    itemCaption: privateItemCaption))
+                    
+                    
                 }
-                
+                print(resultEbookDetailArray)
                 completion(resultEbookDetailArray, nil)
                 
                 

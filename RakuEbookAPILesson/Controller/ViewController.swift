@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        resultTableView.register(UINib(nibName: "TableViewCustomCell", bundle: nil), forCellReuseIdentifier: "EbookDetailCell")
+        resultTableView.register(UINib(nibName: "TableViewCutomCell", bundle: nil), forCellReuseIdentifier: "EbookDetailCell")
         resultTableView.delegate = self
         resultTableView.dataSource = self
         
@@ -29,7 +29,19 @@ class ViewController: UIViewController {
 
     @IBAction func search(_ sender: UIButton) {
         
-        
+        alamofireProcess.getEbookDetailData(searchKeyWord: searchTextField.text) { result, error in
+            
+            if error != nil{
+                
+                return
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {[self] in
+                
+                cellContentsArray = result!
+                resultTableView.reloadData()
+            }
+        }
     }
     
 }
@@ -38,7 +50,7 @@ extension ViewController:UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return tableView.frame.height / 2.5
+        return tableView.frame.height / 3.5
     }
 
 }
