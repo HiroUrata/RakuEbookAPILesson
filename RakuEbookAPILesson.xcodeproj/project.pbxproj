@@ -15,6 +15,8 @@
 		54E1100C273AABDF00A2019E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E1100A273AABDF00A2019E /* LaunchScreen.storyboard */; };
 		54E11018273AACB500A2019E /* TableViewCutomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E11016273AACB500A2019E /* TableViewCutomCell.swift */; };
 		54E11019273AACB500A2019E /* TableViewCutomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E11017273AACB500A2019E /* TableViewCutomCell.xib */; };
+		54E1101C273AAEE500A2019E /* EbookDetailDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1101B273AAEE500A2019E /* EbookDetailDatas.swift */; };
+		54E1101E273AB0DA00A2019E /* AlamofireProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1101D273AB0DA00A2019E /* AlamofireProcess.swift */; };
 		85E1AEC3CAB2802E07D6C71B /* Pods_RakuEbookAPILesson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AEA44C8FB88068E908F76E /* Pods_RakuEbookAPILesson.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		54E1100D273AABDF00A2019E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54E11016273AACB500A2019E /* TableViewCutomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCutomCell.swift; sourceTree = "<group>"; };
 		54E11017273AACB500A2019E /* TableViewCutomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCutomCell.xib; sourceTree = "<group>"; };
+		54E1101B273AAEE500A2019E /* EbookDetailDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbookDetailDatas.swift; sourceTree = "<group>"; };
+		54E1101D273AB0DA00A2019E /* AlamofireProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireProcess.swift; sourceTree = "<group>"; };
 		8897A89D9462C514FD6C0BF7 /* Pods-RakuEbookAPILesson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuEbookAPILesson.release.xcconfig"; path = "Target Support Files/Pods-RakuEbookAPILesson/Pods-RakuEbookAPILesson.release.xcconfig"; sourceTree = "<group>"; };
 		C0422A115F8B5C2C604C43E9 /* Pods-RakuEbookAPILesson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuEbookAPILesson.debug.xcconfig"; path = "Target Support Files/Pods-RakuEbookAPILesson/Pods-RakuEbookAPILesson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +103,8 @@
 		54E11015273AAC4200A2019E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				54E1101B273AAEE500A2019E /* EbookDetailDatas.swift */,
+				54E1101D273AB0DA00A2019E /* AlamofireProcess.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,9 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E1101C273AAEE500A2019E /* EbookDetailDatas.swift in Sources */,
 				54E11004273AABDC00A2019E /* ViewController.swift in Sources */,
 				54E11000273AABDC00A2019E /* AppDelegate.swift in Sources */,
 				54E11018273AACB500A2019E /* TableViewCutomCell.swift in Sources */,
+				54E1101E273AB0DA00A2019E /* AlamofireProcess.swift in Sources */,
 				54E11002273AABDC00A2019E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
